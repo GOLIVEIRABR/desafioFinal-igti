@@ -1,0 +1,156 @@
+.transactionRecipe{
+  padding: 10px 5px 10px 10px;
+  display: flex;
+  background-color:#91efdf;
+  align-items: center;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.transactionExpense{
+  padding: 10px 5px 10px 10px;
+  display: flex;
+  background-color:#fba2a1;
+  align-items: center;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.spanClick{
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.firstPart{
+  display:flex;
+  flex:2;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.firstPartColumn{
+  flex-direction:column;
+  margin-left:12px;
+}
+
+.secondPart{
+  display:flex;
+  flex:1;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.firstSecondPartColumn{
+  margin-right: 60px;
+  font-size: 1.5em;
+}
+
+
+.flexRow {
+	display: flex;
+  margin: 0 auto;
+}
+
+.spaceBetween {
+	justify-content: space-between;
+}
+
+.flexStart {
+	justify-content: flex-start;
+}
+
+.spaceAround {
+	justify-content: space-around;
+}
+
+.flexEnd {
+	justify-content: flex-end;
+}
+
+.centered {
+	justify-content: center;
+}
+
+.centerH {
+	align-items: center;
+}
+
+.infoHeader{
+  border: 1px solid #e6e8e7;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.infoMid{
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.column{
+  flex-direction: column;
+}
+
+
+.item {
+	margin: 3px;
+}
+
+.select{
+  width:100px;
+}
+
+.newButton {
+  width: 230px;
+  margin-right: 10px;
+}
+
+
+.infoHeaderExpense{
+  color: #a86b67
+}
+
+.infoHeaderRecipe{
+  color: #389094
+}
+
+.infoHeaderNegativeBalance{
+  color:#a86b67
+}
+
+.infoHeaderPositiveBalance{
+  color: #389094
+}
+
+.formModal{
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 15px;
+  margin-top: 15px
+}
+
+.divRadioButtons{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.divRadioButtons > label{ 
+  margin-right: 10px;
+  margin-left: 10px;
+  padding: 20px
+}
+
+.modalSpanExpense{ 
+  color: rgb(192,57,43);
+  font-size: 1.3rem !important;
+  font-weight: bold;
+ }
+
+ .modalSpanEarning{ 
+  color: rgb(39,174,96);
+  font-size: 1.3rem !important;
+  font-weight: bold;
+ }
