@@ -14,7 +14,7 @@ export default function Month(props) {
         </div>
         <div className={css.secondPart}>
           <div className={css.firstSecondPartColumn}>
-            <div><span>R$ {value}</span></div>
+            <div><span>{value}</span></div>
           </div>
           <div className={css.secondSecondPartColumn}>        
             <span className={css.spanClick} onClick={()=>editButton(id)}><i className="tiny material-icons">create</i></span>

@@ -1,5 +1,6 @@
 import React from 'react'
 import css from './dashboard.module.css';
+import {formatNumber} from '../../helpers/formatter';
 
 export default function Month(props) {
   const {recipes, expenses, balance, quantity} = props
@@ -10,13 +11,13 @@ export default function Month(props) {
         <strong>Lançamentos:<span> {quantity}</span></strong> 
       </div>
       <div className="">
-        <strong>Receitas: <span className={css.infoHeaderRecipe}>R$ {recipes}</span></strong>
+        <strong>Receitas: <span className={css.infoHeaderRecipe}>{formatNumber(recipes)}</span></strong>
       </div>
       <div className="">
-        <strong>Despesas: <span className={css.infoHeaderExpense}>R$ {expenses}</span></strong> 
+        <strong>Despesas: <span className={css.infoHeaderExpense}>{formatNumber(expenses)}</span></strong> 
       </div>
       <div className="">
-        <strong>Saldo: <span className={balance>=0?css.infoHeaderPositiveBalance:css.infoHeaderNegativeBalance}>R$ {balance}</span></strong> 
+        <strong>Saldo: <span className={balance>=0?css.infoHeaderPositiveBalance:css.infoHeaderNegativeBalance}>{formatNumber(balance)}</span></strong> 
       </div>
       </div>
     </div>

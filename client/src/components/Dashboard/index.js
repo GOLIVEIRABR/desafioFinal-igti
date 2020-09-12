@@ -7,8 +7,8 @@ import InfoMid from './infoMid';
 import InfoTransaction from './infoTransaction';
 import ModalAdd from './modalAdd';
 import ModalEdit from './modalEdit';
-import {formatNumber} from '../../helpers/formatter';
 import Spinner from '../../helpers/Spinner';
+import {formatNumber} from '../../helpers/formatter';
 
 
 export default function ControleFinanceiro() {
@@ -208,7 +208,7 @@ export default function ControleFinanceiro() {
       <div className="container">  
         <Header/>
         <DateSelector buttons={handleButtons} select={handleSelector} selected = {dateFilter}/>
-        <InfoHeader recipes = {formatNumber(recipes)} expenses={formatNumber(expenses)} balance={formatNumber(balance)} quantity = {filteredTransactions.length}/>
+        <InfoHeader recipes = {recipes} expenses={expenses} balance={balance} quantity = {filteredTransactions.length}/>
         <InfoMid handleAddButton = {handleAddButton} onChange={handleFilter} disabled={filter.length>0?'disabled':''}/>
         {
           activeSpinner===true?<Spinner/>:          filteredTransactions.map((transaction, index)=>{

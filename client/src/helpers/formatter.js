@@ -1,4 +1,4 @@
-const formatter = new Intl.NumberFormat('pt-BR', {style: 'decimal', maximumFractionDigits: '2', minimumFractionDigits: '2'});
+const formatter = new Intl.NumberFormat('pt-BR', {style: 'currency', currency:'BRL'});
 const formatterPercent = new Intl.NumberFormat('pt-BR', {style: 'percent', maximumFractionDigits: '2', minimumFractionDigits: '2'});
 
 function formatNumber(numberToFormat) {
