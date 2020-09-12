@@ -100,7 +100,7 @@
 }
 
 .newButton {
-  width: 230px;
+  min-width: 230px;
   margin-right: 10px;
 }
 
