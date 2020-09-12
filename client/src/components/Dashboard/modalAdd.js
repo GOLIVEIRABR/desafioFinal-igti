@@ -91,11 +91,11 @@ export default function modal(props) {
                   </label>
                 </div>
                 <div className="input-field ">
-                  <input onChange={handleInput} name="inputDescription" id="inputDescription" type="text" required defaultValue=""/>
+                  <input onChange={handleInput} name="inputDescription" id="inputDescription" autoComplete="off" type="text" required defaultValue=""/>
                   <label htmlFor="inputDescription" className="active">Descrição:</label>
                 </div>
                 <div className="input-field ">
-                  <input onChange={handleInput} name="inputCategory" id="inputCategory" type="text" required defaultValue=""/>
+                  <input onChange={handleInput} name="inputCategory" id="inputCategory" autoComplete="off" type="text" required defaultValue=""/>
                   <label htmlFor="inputCategory" className="active">Categoria:</label>
                 </div>                  
                 
