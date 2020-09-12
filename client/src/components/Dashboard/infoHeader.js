@@ -16,7 +16,7 @@ export default function Month(props) {
         <strong>Despesas: <span className={css.infoHeaderExpense}>R$ {expenses}</span></strong> 
       </div>
       <div className="">
-        <strong>Saldo: <span className={css.infoHeaderPositiveBalance}>R$ {balance}</span></strong> 
+        <strong>Saldo: <span className={balance>=0?css.infoHeaderPositiveBalance:css.infoHeaderNegativeBalance}>R$ {balance}</span></strong> 
       </div>
       </div>
     </div>
